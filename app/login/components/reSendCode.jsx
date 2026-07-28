@@ -33,7 +33,7 @@ export default function ReSendOtp({
     if (!time.current) return;
     reSendTime();
     if (otpType === "veriftEmail") {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/reSendCode", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/reSendCode", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export default function ReSendOtp({
     }
 
     if (otpType === "otpPassword") {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/sendOtpPassword", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/sendOtpPassword", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
