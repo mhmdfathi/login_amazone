@@ -29,7 +29,7 @@ export default function ResetPasswordForm({ email, setStep }) {
     if (password !== rePassword) {
       setErrMssgRePassword("notSame");
     } else {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/resetPassword", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/resetPassword", {
         method: "POST",
         headers: {
           "Content-Type":"application/json",
