@@ -18,7 +18,7 @@ export default function EmailForm({ email, setEmail, setStep }) {
     }
 
     setrLoding(true);
-    await fetch("http://localhost:4000/api/user", {
+    await fetch("http://back-production-e1fb.up.railway.app/api/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
