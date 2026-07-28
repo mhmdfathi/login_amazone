@@ -1,0 +1,111 @@
+.formContainer {
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: var(--border-line);
+  width: 350px;
+}
+
+.contentFormLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.BtnForm {
+  border: none;
+  background: var(--btnColor);
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px;
+  border-radius: 25px;
+}
+.BtnFormOr {
+  border: 1px solid #adabab;
+  background: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px;
+  border-radius: 25px;
+}
+.BtnForm:hover {
+  background-color: #f4cd09;
+}
+
+.headerForm {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.infoInput {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.inputForm,
+.inputFormErr {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  outline: none;
+}
+.inputForm {
+  border: 1px solid #868686;
+}
+.inputFormErr {
+  border: 1px solid red;
+}
+
+.inputForm::placeholder,
+.inputFormErr::placeholder {
+  font-size: 13px;
+}
+
+.inputForm:focus {
+  outline: 3px solid rgba(13, 238, 234, 0.254);
+}
+
+.linkColor {
+  color: var(--linkColor);
+  cursor: pointer;
+}
+
+.linkColor:hover {
+  text-decoration: underline;
+}
+
+.linkDisabled {
+  opacity: 0.5;
+}
+
+.inputsCon {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mssgSuccess,
+.mssgError {
+  gap: 5px;
+  width: 350px;
+  padding: 20px;
+
+  border-radius: 10px;
+  font-size: 14px;
+}
+.mssgSuccess {
+  border: 2px solid green;
+  border-left: 13px solid green;
+}
+.mssgError {
+  border: 2px solid red;
+  border-left: 13px solid red;
+}
