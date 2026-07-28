@@ -24,7 +24,7 @@ export default function Otp({
 
   const sendCodeAndSaveUser = async (email) => {
     if (otpType === "veriftEmail") {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/sendOtp", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/sendOtp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export default function Otp({
         .then((res) => res.json())
         .then((data) => {});
     } else if (otpType === "otpPassword") {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/sendOtpPassword", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/sendOtpPassword", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function Otp({
     setLoding(true);
 
     if (otpType === "veriftEmail") {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/verifyEmail", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/verifyEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ export default function Otp({
           }
         });
     } else if (otpType === "otpPassword") {
-      await fetch("http://back-production-e1fb.up.railway.app/api/user/checkCodePass", {
+      await fetch("https://back-production-e1fb.up.railway.app/api/user/checkCodePass", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
