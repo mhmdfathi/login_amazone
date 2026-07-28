@@ -42,7 +42,7 @@ export default function CreateAcound({ setStep, setEmail, email  , setOtpType })
       setErrMssgRePassword("notSame");
     } else {
       setLoding(true);
-      await fetch("http://localhost:4000/api/user/create", {
+      await fetch("http://back-production-e1fb.up.railway.app/api/user/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
