@@ -16,7 +16,7 @@ export default function PasswordForm({
       return setErrMssgrePassword(true);
     }
 
-    await fetch("http://back-production-e1fb.up.railway.app/api/user/checkPass", {
+    await fetch("https://back-production-e1fb.up.railway.app/api/user/checkPass", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
