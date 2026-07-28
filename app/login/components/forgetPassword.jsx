@@ -23,7 +23,7 @@ export default function ForgetPassword({
       setErrMssgEmailForm(false);
     }
 
-    await fetch("http://localhost:4000/api/user/findEmail", {
+    await fetch("http://back-production-e1fb.up.railway.app/api/user/findEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
